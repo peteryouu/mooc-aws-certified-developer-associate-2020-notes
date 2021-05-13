@@ -1,11 +1,12 @@
-# IAM: Identity and Access Management
+# IAM: Identity and Access Management - Global Service
+- **Least privilege principle**: don't give more permissions than a user needs.
 
 ✔ When accessing AWS, the root account should **never** be used. Users must be created with the proper permissions. IAM is central to AWS.
 - Users: A physical person
-- Groups: Functions (admin, devops) Teams (engineering, design) which contain a group of users
+- Groups: Functions (admin, devops) Teams (engineering, design) which contain only **groups of users**
+- Users don't need to be in groups or they can be in multiple groups
 - Roles: Internal usage within AWS resources
 - Policies (JSON documents): Defines what each of the above can and cannot do. **Note**: IAM has predefined managed policies.
-
 
 #### For big enterprises:
 - IAM Federation: Integrate their own repository of users with IAM using SAML standard
